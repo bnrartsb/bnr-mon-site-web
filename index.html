@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hello world</h1>
+    <button>clique moi</button>
+    <script>
+      function demandepermission() {
+        let langue = prompt("dans quelle langue parles-tu ?");
+        if (langue === "français") {
+          alert("bonjour");
+        }
+        if (langue !== "français") {
+          alert("hello !");
+        }
+        let age = prompt("quell age as-tu");
+        if (age <= 18) {
+          alert("tu peux visiter ce site !");
+        }
+        if (age < 18) {
+          alert("tu ne peux pas visiter ce site !");
+        }
+      }
+      demandepermission();
+      demandepermission();
+      demandepermission();
+      demandepermission();
+      let prenom = promt("quel est ton nom ?");
+      let nom = prompt("quel est ton nom ?");
+
+      alert("merci " + prenom + ",nous te conctateron bientot");
+
+      let cliqueMoi = document.querySelector("bouton");
+    </script>
+  </body>
+</html>
